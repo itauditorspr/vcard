@@ -4,98 +4,103 @@ import Card from '../components/Card.astro'
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<div class="main-background">
-			test
-		</div>
-		<div class="border-rounded">
-			<div class="ItA-Lupa"></div>
+    <main>
+        <div class="main-background">
+            test
+        </div>
+        <div class="border-rounded">
+            <div class="ItA-Lupa"></div>
 
-			<div class="ItAuditorsLogo"></div>
-		</div>
-		<!-- ItA-Lupa -->
+            <div class="ItAuditorsLogo"></div>
+        </div>
+        
+        <div class="contact-section">
+        <p class="centered-paragraph" style="font-size: 28px;">Más de 10 años siendo parte de la industria tecnológica de Puerto Rico.</p>
 
-		
-			<p>Más de 10 años siendo parte de la industria tecnológica de Puerto Rico.</p>
-		<Card >
-		<!-- <div> -->
-		 <div class="icon-container">
-			<img src="/SVG/phone.svg" height="80" width="80" alt="call"/>
-			<img src="/SVG/email.svg" height="80" width="80" alt="call"/>
-			<img src="/SVG/sms.svg" height="80" width="80" alt="call"/>
-			<img src="/SVG/whatsapp.svg" height="80" width="80" alt="call"/>
-		</div>
-		<!-- </div> -->
-		</Card>
-	<div>
-		<p>Oficina: 787.680.2088</p>
-		<p>Teléfono - Whatsapp: 787.925.6612</p>
-	</div>
+        <Card >
+        <!-- <div> -->
+         <div class="icon-container">
+            <img src="/SVG/phone.svg" height="80" width="80" alt="call"/>
+            <img src="/SVG/email.svg" height="80" width="80" alt="call"/>
+            <img src="/SVG/sms.svg" height="80" width="80" alt="call"/>
+            <img src="/SVG/whatsapp.svg" height="80" width="80" alt="call"/>
+        </div>
+        <!-- </div> -->
+        </Card>
+    <div>
+        <p class="m-0 p-0" style="font-size: 26px; font-weight: 700; margin-bottom: 6px;">Oficina: 787.680.2088</p>
+        <p class="m-0 p-0" style="font-size: 26px; font-weight: 700; margin-bottom:2rem;">Teléfono: 787.925.6612</p>
+    </div>
 
-	<Card>
+    <Card>
+<div class="card-content">
+	<div style="display: flex; gap:20px;">
 		<img src="/SVG/facebook.svg" height="80" width="80"/>
-	<div>
-		<h2>Facebook</h2>
-		<p>Follow us!</p>
+    <div style="display:flex; flex-direction: column; justify-content: center;">
+		<h2 class="m-0">Facebook</h2>
+        <p class="m-0">Follow us!</p>
 	</div>
-	<img src="/SVG/" alt="">
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/269/269054.png" alt="" height="80" width="80">
+</div>
 
-	</Card>
+    </Card>
 
 
-	<div>
-		<div>
-			<h2>¡Ubicanos con un click!</h2>
-			<p>En google maps.</p>
-		</div>
-		<div>
-			<img src="/SVG/maps.svg" alt="location" height="80" width="80">
-		</div>
-	</div>
+    <div>
+        <div>
+            <h2>¡Ubicanos con un click!</h2>
+            <p>En google maps.</p>
+        </div>
+        <div>
+            <img src="/SVG/maps.svg" alt="location" height="80" width="80">
+        </div>
+    </div>
 
-	<Card>
-		<img src="/SVG/www.svg" alt="" height="80" width="80">
-		<div>
-			<h2>Visítanos</h2>
-			<p>En nuestra página web.</p>
-		</div>
-		<img src="" alt="">
-	</Card>
+    <Card>
+        <img src="/SVG/www.svg" alt="" height="80" width="80">
+        <div>
+            <h2>Visítanos</h2>
+            <p>En nuestra página web.</p>
+        </div>
+        <img src="" alt="">
+    </Card>
 
-	<Card>
-		<img src="/SVG/linkedin.svg" alt="" height="80" width="80">
-		<div>
-			<h2>Visítanos</h2>
-			<p>En nuestra página web.</p>
-		</div>
-		<img src="" alt="">
-	</Card>
+    <Card>
+        <img src="/SVG/linkedin.svg" alt="" height="80" width="80">
+        <div>
+            <h2>Visítanos</h2>
+            <p>En nuestra página web.</p>
+        </div>
+        <img src="" alt="">
+    </Card>
 
-	<p>Somos una organización que provee soluciones y servicios de consultoría, desarrollo e implementaciones.</p>
+    <p>Somos una organización que provee soluciones y servicios de consultoría, desarrollo e implementaciones.</p>
 
-	<div>
+    <div>
 
-		<img src="/SVG/team.svg" alt="" height="80" width={80}>
-		<img src="/SVG/security.svg" alt="" height="80" width="80">
-	</div>
-	
-
-		
-	</main>
+        <img src="/SVG/team.svg" alt="" height="80" width={80}>
+        <img src="/SVG/security.svg" alt="" height="80" width="80">
+    </div>
+    
+</div>
+        
+    </main>
 </Layout>
 
 <style>
 
-	main{
-		background-color: green;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		max-width: 768px;
-		margin: 0 auto;
-	}
-	.main-background {
+    main{
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 768px;
+        margin: 0 auto;
+        color: #ffffff;
+    }
+    .main-background {
     background: url("/Image-100.jpg") no-repeat;
     background-size: cover; /* Ensure the image covers the entire area */
     background-position: center; /* Center the image within the element */
@@ -105,13 +110,13 @@ import Card from '../components/Card.astro'
     overflow: hidden; /* Hide any overflow */
     margin: 0 auto; /* Center the element horizontally */
 }
-	.borde-rounded{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.ItA-Lupa {
+    .borde-rounded{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ItA-Lupa {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,52 +128,77 @@ import Card from '../components/Card.astro'
     width: 100%; /* Make the element as wide as its container */
     margin-top: -10rem;
 }
-	.border-rounded{
-		background-color: #ffffff;
-		height: 200px;
-		width: 100%;
+    .border-rounded{
+        background-color: #ffffff;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0 0px 80px 80px ;
+        padding-bottom: 4rem;
+        transition: all .5s ease;
+    }
+    .ItAuditorsLogo{
+        background: url("/logo-original.svg") no-repeat;
+        background-size: contain;	
+        background-position:center; /* Position the image at the bottom */
+        height: 300px;
+        width:85%;
+        margin: 0 auto;
+        margin-top: -2rem;
+    }
+
+	.card-content{
 		display: flex;
-		flex-direction: column;
+		width: 100%;
 		align-items: center;
-		border-radius: 0 0px 80px 80px ;
-		padding-bottom: 4rem;
-		transition: all .5s ease;
-	}
-	.ItAuditorsLogo{
-		background: url("/logo-original.svg") no-repeat;
-		background-size: contain;	
-		background-position:center; /* Position the image at the bottom */
-		height: 300px;
-		width:85%;
-		margin: 0 auto;
-		margin-top: -2rem;
+		justify-content: space-evenly;
 	}
 
-	@media (max-width: 600px){
-		.border-rounded{
-			padding-bottom: 1rem;
-			border-radius: 0 0px 50px 50px ;
+    @media (max-width: 600px){
+        .border-rounded{
+            padding-bottom: 1rem;
+            border-radius: 0 0px 50px 50px ;
 
-		}
-		.ItAuditorsLogo{
-			margin-top: -3rem;
-		}
+        }
+        .ItAuditorsLogo{
+            margin-top: -3rem;
+        }
 
-		.icon-container img{
-			height: 50px;
-			width: 50px;
-		}
+        .icon-container img{
+            height: 50px;
+            width: 50px;
+        }
 
+    }
+
+	.m-0{
+		margin: 0;
+	}
+	.p-0{
+		padding: 0;
 	}
 
 
-	.icon-container {
+    .icon-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-	padding:1rem 1rem;
+    padding:1rem .2rem;
     gap: 1rem; /* Add some space between the icons */
 }
+.contact-section{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
 
+
+.centered-paragraph {
+    text-align: center;
+}
 
 </style>
