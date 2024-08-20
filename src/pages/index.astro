@@ -15,7 +15,7 @@ import Card from '../components/Card.astro'
         </div>
         
         <div class="contact-section">
-        <p class="centered-paragraph" style="font-size: 28px;">Más de 10 años siendo parte de la industria tecnológica de Puerto Rico.</p>
+        <p class="centered-paragraph paragraph-title" >Más de 10 años siendo parte de la industria tecnológica de Puerto Rico.</p>
 
         <Card >
         <!-- <div> -->
@@ -28,13 +28,13 @@ import Card from '../components/Card.astro'
         <!-- </div> -->
         </Card>
     <div>
-        <p class="m-0 p-0" style="font-size: 26px; font-weight: 700; margin-bottom: 6px;">Oficina: 787.680.2088</p>
-        <p class="m-0 p-0" style="font-size: 26px; font-weight: 700; margin-bottom:2rem;">Teléfono: 787.925.6612</p>
+        <p class="m-0 p-0 parr-responsive" style="margin-bottom: 6px;">Oficina: 787.680.2088</p>
+        <p class="m-0 p-0 parr-responsive" style="margin-bottom:2rem;">Teléfono: 787.925.6612</p>
     </div>
 
     <Card>
 <div class="card-content">
-	<div style="display: flex; gap:20px;">
+	<div style="display: flex; gap:16px;">
 		<img src="/SVG/facebook.svg" height="80" width="80"/>
     <div style="display:flex; flex-direction: column; justify-content: center;">
 		<h2 class="m-0">Facebook</h2>
@@ -156,7 +156,30 @@ import Card from '../components/Card.astro'
 		justify-content: space-evenly;
 	}
 
+	.paragraph-title{
+		font-size: 28px;
+	}
+	
+	.paragraph-general{
+
+	}
+
+	.parr-responsive{
+			font-size: 26px; font-weight: 700; 
+			
+		}
+
     @media (max-width: 600px){
+
+
+	.paragraph-general{
+		font-size: ;
+		
+	}
+
+		.paragraph-title{
+			font-size: 22px;
+		}
         .border-rounded{
             padding-bottom: 1rem;
             border-radius: 0 0px 50px 50px ;
@@ -170,6 +193,19 @@ import Card from '../components/Card.astro'
             height: 50px;
             width: 50px;
         }
+
+		.card-content img{
+			height: 50px;
+			width: 50px;
+		}
+		.card-content p, h2{
+			font-size: 18px;
+		}
+
+		.parr-responsive{
+			font-size: 22px; font-weight: 700; 
+			
+		}
 
     }
 
