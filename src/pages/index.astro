@@ -1,10 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<div class="main-background">
+			test
+		</div>
+		<div class="border-rounded">
+			<div class="ItA-Lupa"></div>
+
+			<div class="ItAuditorsLogo"></div>
+		</div>
+		<!-- ItA-Lupa -->
+
+
 	
 
 		
@@ -12,60 +22,76 @@ import Card from '../components/Card.astro';
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
+
+	main{
+		background-color: green;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 768px;
+		margin: 0 auto;
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
+	.main-background {
+    background: url("/Image-100.jpg") no-repeat;
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image within the element */
+    min-height: 50vh;
+    width: 100%;
+    max-width: 768px;
+    overflow: hidden; /* Hide any overflow */
+    margin: 0 auto; /* Center the element horizontally */
+}
+	.borde-rounded{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
+	.ItA-Lupa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("/Avatar.svg") no-repeat;
+    background-size:auto; /* Ensure the background image fits within the element */
+    background-position: center; /* Center the background image */
+    height: 500px; /* Make the element as tall as its container */
+    width: 100%; /* Make the element as wide as its container */
+    margin-top: -10rem;
+}
+	.border-rounded{
+		background-color: #ffffff;
+		height: 200px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 0 0px 80px 80px ;
+		padding-bottom: 4rem;
+		transition: all .5s ease;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
+	.ItAuditorsLogo{
+		background: url("/logo-original.svg") no-repeat;
+		background-size: contain;	
+		background-position:center; /* Position the image at the bottom */
+		height: 300px;
+		width:85%;
+		margin: 0 auto;
+		margin-top: -2rem;
 	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
+
+	@media (max-width: 600px){
+		.border-rounded{
+			padding-bottom: 1rem;
+			border-radius: 0 0px 50px 50px ;
+
+		}
+		.ItAuditorsLogo{
+			margin-top: -3rem;
+		}
+
 	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
+
+
 </style>
