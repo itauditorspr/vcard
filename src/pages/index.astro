@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -14,7 +15,69 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 		<!-- ItA-Lupa -->
 
+		
+			<p>Más de 10 años siendo parte de la industria tecnológica de Puerto Rico.</p>
+		<Card >
+		<!-- <div> -->
+		 <div class="icon-container">
+			<img src="/SVG/phone.svg" height="80" width="80" alt="call"/>
+			<img src="/SVG/email.svg" height="80" width="80" alt="call"/>
+			<img src="/SVG/sms.svg" height="80" width="80" alt="call"/>
+			<img src="/SVG/whatsapp.svg" height="80" width="80" alt="call"/>
+		</div>
+		<!-- </div> -->
+		</Card>
+	<div>
+		<p>Oficina: 787.680.2088</p>
+		<p>Teléfono - Whatsapp: 787.925.6612</p>
+	</div>
 
+	<Card>
+		<img src="/SVG/facebook.svg" height="80" width="80"/>
+	<div>
+		<h2>Facebook</h2>
+		<p>Follow us!</p>
+	</div>
+	<img src="/SVG/" alt="">
+
+	</Card>
+
+
+	<div>
+		<div>
+			<h2>¡Ubicanos con un click!</h2>
+			<p>En google maps.</p>
+		</div>
+		<div>
+			<img src="/SVG/maps.svg" alt="location" height="80" width="80">
+		</div>
+	</div>
+
+	<Card>
+		<img src="/SVG/www.svg" alt="" height="80" width="80">
+		<div>
+			<h2>Visítanos</h2>
+			<p>En nuestra página web.</p>
+		</div>
+		<img src="" alt="">
+	</Card>
+
+	<Card>
+		<img src="/SVG/linkedin.svg" alt="" height="80" width="80">
+		<div>
+			<h2>Visítanos</h2>
+			<p>En nuestra página web.</p>
+		</div>
+		<img src="" alt="">
+	</Card>
+
+	<p>Somos una organización que provee soluciones y servicios de consultoría, desarrollo e implementaciones.</p>
+
+	<div>
+
+		<img src="/SVG/team.svg" alt="" height="80" width={80}>
+		<img src="/SVG/security.svg" alt="" height="80" width="80">
+	</div>
 	
 
 		
@@ -91,7 +154,21 @@ import Layout from '../layouts/Layout.astro';
 			margin-top: -3rem;
 		}
 
+		.icon-container img{
+			height: 50px;
+			width: 50px;
+		}
+
 	}
+
+
+	.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	padding:1rem 1rem;
+    gap: 1rem; /* Add some space between the icons */
+}
 
 
 </style>
