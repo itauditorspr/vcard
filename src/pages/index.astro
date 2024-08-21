@@ -5,7 +5,7 @@ const currentYear = new Date().getFullYear();
 import "../style.css";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="ItAuditorsPR">
   <main>
     <div class="main-background"></div>
     <div class="border-rounded">
@@ -20,14 +20,20 @@ import "../style.css";
 
       <Card>
         <div class="icon-container">
-          <a href="tel:+17876802088" target="_blank">
+          <a href="tel:7876802088" target="_blank">
             <img src="/vcard/phone.svg" height="80" width="80" alt="call" />
           </a>
           <a href="mailto:admin@itauditorspr.com" target="_blank">
             <img src="/vcard/email.svg" height="80" width="80" alt="email us" />
           </a>
           <a href="sms:+17879256612" target="_blank">
-            <img src="/vcard/sms.svg" height="80" width="80" alt="message us" />
+            <img
+              src="/vcard/sms.svg"
+              height="80"
+              width="80"
+              alt="message us"
+              loading="eager"
+            />
           </a>
           <a href="https://wa.me/17879256612" target="_blank">
             <img
@@ -40,27 +46,58 @@ import "../style.css";
         </div>
       </Card>
       <div>
-        <p class="m-0 p-0 parr-responsive" style="margin-bottom: 6px;">
-          Oficina: 787.680.2088
-        </p>
-        <p class="m-0 p-0 parr-responsive" style="margin-bottom:2rem;">
-          Teléfono: 787.925.6612
-        </p>
+        <a
+          href="tel:7876802088"
+          target="_blank"
+          style="text-decoration: none; color: inherit;"
+        >
+          <p class="m-0 p-0 parr-responsive" style="margin-bottom: 6px;">
+            Oficina: 787.680.2088
+          </p>
+        </a>
+
+        <a
+          href="tel:7879256612"
+          target="_blank"
+          style="text-decoration: none; color: inherit;"
+        >
+          <p class="m-0 p-0 parr-responsive" style="margin-bottom:2rem;">
+            Teléfono: 787.925.6612
+          </p>
+        </a>
       </div>
 
       <Card>
-        <div class="card-content">
-          <div style="display: flex; gap:16px;">
-            <img src="/vcard/facebook.svg" height="80" width="80" />
-            <div
-              style="display:flex; flex-direction: column; justify-content: center;"
-            >
-              <h2 class="m-0">Facebook</h2>
-              <p class="m-0 text-card-p">Follow us!</p>
+        <a
+          href="https://www.facebook.com/ITAuditorsPR/"
+          target="_blank"
+          style="text-decoration: none; color: inherit; width:100%"
+        >
+          <div class="card-content">
+            <div style="display: flex; gap:16px;">
+              <img
+                src="/vcard/facebook.svg"
+                height="80"
+                width="80"
+                alt="Facebook ItAuditors"
+                loading="lazy"
+              />
+              <div
+                style="display:flex; flex-direction: column; justify-content: center;"
+              >
+                <h2 class="m-0">Facebook</h2>
+                <p class="m-0 text-card-p">Follow us!</p>
+              </div>
             </div>
+            <img
+              src="/vcard/arrow.svg"
+              alt="row-goto"
+              height="40"
+              width="40"
+              loading="lazy"
+            />
           </div>
-          <img src="/vcard/arrow.svg" alt="row-goto" height="40" width="40" />
-        </div>
+        </a>
       </Card>
 
       <div class="d-flex card-2">
@@ -70,39 +107,89 @@ import "../style.css";
           </h2>
           <p class="m-0">En google maps.</p>
         </div>
-        <div class="card-box">
-          <img src="/vcard/maps.svg" alt="location" height="60" width="60" />
-        </div>
+        <a
+          href="https://maps.app.goo.gl/FQJ84W6a8AGS1BZV6"
+          target="_blank"
+          style="text-decoration: none; color: inherit;"
+        >
+          <div class="card-box">
+            <img
+              src="/vcard/maps.svg"
+              alt="location"
+              height="60"
+              width="60"
+              loading="lazy"
+            />
+          </div>
+        </a>
       </div>
 
       <Card>
-        <div class="card-content">
-          <div style="display: flex; gap:16px; align-items: center;">
-            <img src="/vcard/www.svg" height="80" width="80" />
-            <div
-              style="display:flex; flex-direction: column; justify-content: center;"
-            >
-              <h2 class="m-0">Visítanos</h2>
-              <p class="m-0 text-card-p">En nuestra página web.</p>
+        <a
+          href="https://itauditorspr.com/"
+          target="_blank"
+          style="text-decoration: none; color: inherit; width:100%"
+        >
+          <div class="card-content">
+            <div style="display: flex; gap:16px; align-items: center;">
+              <img
+                src="/vcard/www.svg"
+                height="80"
+                width="80"
+                alt="Website ItAuditorsPR"
+                loading="lazy"
+              />
+              <div
+                style="display:flex; flex-direction: column; justify-content: center;"
+              >
+                <h2 class="m-0">Visítanos</h2>
+                <p class="m-0 text-card-p">En nuestra página web.</p>
+              </div>
             </div>
+
+            <img
+              src="/vcard/arrow.svg"
+              alt="row-goto"
+              height="40"
+              width="40"
+              loading="lazy"
+            />
           </div>
-          <img src="/vcard/arrow.svg" alt="row-goto" height="40" width="40" />
-        </div>
+        </a>
       </Card>
+      <!--  -->
 
       <Card>
-        <div class="card-content">
-          <div style="display: flex; gap:16px; align-items: center;">
-            <img src="/vcard/linkedin.svg" height="80" width="80" />
-            <div
-              style="display:flex; flex-direction: column; justify-content: center;"
-            >
-              <h2 class="m-0">Linkedin</h2>
-              <p class="m-0 text-card-p">Follow us!</p>
+        <a
+          href="https://www.linkedin.com/company/itauditorspr"
+          target="_blank"
+          style="text-decoration: none; color: inherit; width:100%"
+        >
+          <div class="card-content">
+            <div style="display: flex; gap:16px; align-items: center;">
+              <img
+                src="/vcard/linkedin.svg"
+                height="80"
+                width="80"
+                alt="LinkedIN ItAuditorsPR"
+                loading="lazy"
+              />
+              <div
+                style="display:flex; flex-direction: column; justify-content: center;"
+              >
+                <h2 class="m-0">Linkedin</h2>
+                <p class="m-0 text-card-p">Follow us!</p>
+              </div>
             </div>
+            <img
+              src="/vcard/arrow.svg"
+              alt="row-goto"
+              height="40"
+              width="40"
+              loading="lazy"
+            />
           </div>
-          <img src="/vcard/arrow.svg" alt="row-goto" height="40" width="40" />
-        </div>
+        </a>
       </Card>
 
       <p class="text-justify text-organizacion">
@@ -111,8 +198,20 @@ import "../style.css";
       </p>
 
       <div class="security-pic">
-        <img src="/vcard/team.svg" alt="" height="90" width="90" />
-        <img src="/vcard/security.svg" alt="" height="90" width="90" />
+        <img
+          src="/vcard/team.svg"
+          alt="TeamWork"
+          height="90"
+          width="90"
+          loading="lazy"
+        />
+        <img
+          src="/vcard/security.svg"
+          alt="Security"
+          height="90"
+          width="90"
+          loading="lazy"
+        />
       </div>
     </div>
     <div class="footer">
@@ -120,8 +219,9 @@ import "../style.css";
         src="/vcard/logo-negatico.svg"
         height="50"
         width="120"
-        alt="ItAuditorsPR"
+        alt="ItAuditorsPR Logo"
         style="margin-bottom: -1rem;"
+        loading="lazy"
       />
       <p>© COPYRIGHT {currentYear} · IT AUDITORS PR. ALL RIGHTS RESERVE</p>
     </div>
