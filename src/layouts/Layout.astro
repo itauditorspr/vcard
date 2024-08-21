@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,22 +8,20 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-
-
-@font-face {
+  @font-face {
     font-family: "Montserrat";
     src: url("/fonts/Montserrat-Thin.ttf") format("truetype");
     font-style: thin;
@@ -32,24 +30,21 @@ const { title } = Astro.props;
   }
   @font-face {
     font-family: "Montserrat";
-    src: url("/fonts/Montserrat-ExtraLight.ttf")
-      format("truetype");
+    src: url("/fonts/Montserrat-ExtraLight.ttf") format("truetype");
     font-style: extralight;
     font-display: swap;
     font-weight: 200;
   }
   @font-face {
     font-family: "Montserrat";
-    src: url("/fonts/Montserrat-Light.ttf")
-      format("truetype");
+    src: url("/fonts/Montserrat-Light.ttf") format("truetype");
     font-style: light;
     font-display: swap;
     font-weight: 300;
   }
   @font-face {
     font-family: "Montserrat";
-    src: url("/fonts/Montserrat-LightItalic.ttf")
-      format("truetype");
+    src: url("/fonts/Montserrat-LightItalic.ttf") format("truetype");
     font-style: italic;
     font-display: swap;
     font-weight: 300;
@@ -57,8 +52,7 @@ const { title } = Astro.props;
 
   @font-face {
     font-family: "Montserrat";
-    src: url("/fonts/Montserrat-Regular.ttf")
-      format("truetype");
+    src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
     font-style: normal;
     font-display: swap;
     font-weight: 400;
@@ -66,16 +60,14 @@ const { title } = Astro.props;
 
   @font-face {
     font-family: "Montserrat";
-    src: url("/fonts/Montserrat-Medium.ttf")
-      format("truetype");
+    src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
     font-style: medium;
     font-display: swap;
     font-weight: 500;
   }
   @font-face {
     font-family: "Montserrat";
-    src: url("/fonts/Montserrat-SemiBold.ttf")
-      format("truetype");
+    src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
     font-style: semibold;
     font-display: swap;
     font-weight: 600;
@@ -87,60 +79,59 @@ const { title } = Astro.props;
     font-display: swap;
     font-weight: 700;
   }
-  
+
   @font-face {
     font-family: "Montserrat";
-    src: url("/fonts/Montserrat-BoldItalic.ttf")
-      format("truetype");
+    src: url("/fonts/Montserrat-BoldItalic.ttf") format("truetype");
     font-style: italic;
     font-display: swap;
     font-weight: 700;
   }
 
   @font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat-ExtraBold.ttf") format("truetype");
-  font-style: normal; /* Corrected from extrabold */
-  font-display: swap;
-  font-weight: 800;
-}
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+    font-style: normal; /* Corrected from extrabold */
+    font-display: swap;
+    font-weight: 800;
+  }
 
   @font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Black.ttf") format("truetype");
-  font-style: normal; /* Corrected from black */
-  font-display: swap;
-  font-weight: 900;
-}
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-Black.ttf") format("truetype");
+    font-style: normal; /* Corrected from black */
+    font-display: swap;
+    font-weight: 900;
+  }
 
-body{
-  margin: 0 !important;
-}
+  body {
+    margin: 0 !important;
+  }
 
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family:"Montserrat", sans-serif;
-		background: #13151a;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+  html {
+    font-family: "Montserrat", sans-serif;
+    background: #13151a;
+  }
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
 </style>

@@ -1,21 +1,20 @@
 ---
-const {content} =Astro.props
+const { content } = Astro.props;
 ---
 
 <section class="card">
-    <slot/>
+  <slot />
 </section>
 
 <style>
-    .card{
-        background-color: #000000b7;
-        width: 85%;
-        min-height: 8rem;
-        border-radius: 20px;
-        margin-bottom: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
+  .card {
+    background-color: #000000b7;
+    width: 90%;
+    min-height: 8rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 </style>
