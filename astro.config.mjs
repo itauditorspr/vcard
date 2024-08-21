@@ -2,5 +2,6 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://github.com/itauditorspr/vcard',
+    site: 'https://itauditorspr.github.io/vcard',
+    base: '/vcard'
 });
