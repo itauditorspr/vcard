@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 const currentYear = new Date().getFullYear();
+import "../style.css";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -162,7 +163,7 @@ const currentYear = new Date().getFullYear();
   </main>
 </Layout>
 
-<style>
+<!-- <style is:global>
   .d-flex {
     display: flex;
   }
@@ -373,4 +374,4 @@ const currentYear = new Date().getFullYear();
       font-size: 12px;
     }
   }
-</style>
+</style> -->
