@@ -213,6 +213,8 @@ import "../style.css";
         />
       </div>
     </div>
+    <button id="downloadVCard">Save Contact</button>
+
     <div class="footer">
       <img
         src="/vcard/logo-negatico.svg"
@@ -226,3 +228,33 @@ import "../style.css";
     </div>
   </main>
 </Layout>
+
+<script>
+  document
+    .getElementById("downloadVCard")
+    .addEventListener("click", function () {
+      const vCardData = `
+  BEGIN:VCARD
+  VERSION:3.0
+  FN:John Doe
+  N:Doe;John;;;
+  TEL;TYPE=CELL:+1234567890
+  EMAIL;TYPE=WORK:john.doe@example.com
+  ORG:Example Company
+  TITLE:Software Engineer
+  URL:https://www.example.com
+  NOTE:This is a sample contact.
+  END:VCARD
+      `;
+
+      const blob = new Blob([vCardData], { type: "text/vcard" });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.style.display = "none";
+      a.href = url;
+      a.download = "contact.vcf";
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+    });
+</script>
