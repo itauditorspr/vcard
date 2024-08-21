@@ -34,7 +34,7 @@
     color: #ffffff;
   }
   .main-background {
-    background: url("/Image-100.jpg") no-repeat;
+    background: url("/vcard/Image-100.jpg") no-repeat;
     background-size: cover; /* Ensure the image covers the entire area */
     background-position: center; /* Center the image within the element */
     min-height: 50vh;
@@ -54,7 +54,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url("/Avatar.svg") no-repeat;
+    background: url("/vcard/Avatar.svg") no-repeat;
     background-size: auto; /* Ensure the background image fits within the element */
     background-position: center; /* Center the background image */
     height: 500px; /* Make the element as tall as its container */
@@ -73,7 +73,7 @@
     transition: all 0.5s ease;
   }
   .ItAuditorsLogo {
-    background: url("/logo-original.svg") no-repeat;
+    background: url("/vcard/logo-original.svg") no-repeat;
     background-size: contain;
     background-position: center; /* Position the image at the bottom */
     height: 300px;
