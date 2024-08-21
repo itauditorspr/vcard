@@ -3,6 +3,6 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
     site: 'https://itauditorspr.github.io',
-    base: 'my-repo',
+    base: 'vcard',
     
 });
