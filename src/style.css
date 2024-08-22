@@ -58,19 +58,19 @@
     background: url("/vcard/Avatar.svg") no-repeat;
     background-size: auto; /* Ensure the background image fits within the element */
     background-position: center; /* Center the background image */
-    height: 500px; /* Make the element as tall as its container */
+    height: 600px; /* Make the element as tall as its container */
     width: 100%; /* Make the element as wide as its container */
-    margin-top: -10rem;
+    margin-top: -9rem;
   }
   .border-rounded {
     background-color: #ffffff;
-    height: 200px;
+    height: 240px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 0 0px 80px 80px;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
     transition: all 0.5s ease;
   }
   .ItAuditorsLogo {
@@ -81,6 +81,7 @@
     width: 85%;
     margin: 0 auto;
     margin-top: -2rem;
+    margin-bottom:2rem;
   }
 
   .card-content {
@@ -159,7 +160,40 @@
     margin: 0;
   }
 
+
+  
+  .downloadVCard {
+    display: inline-flex; /* Use inline-flex to align items within the button */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.downloadVCard:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.downloadVCard:active {
+  background-color: #3e8e41; /* Even darker green on click */
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
   @media (max-width: 640px) {
+
+    .ItA-Lupa{
+      height: 500px;
+    }
  
     .paragraph-title {
       font-size: 22px;
@@ -191,6 +225,14 @@
     .parr-responsive {
       font-size: 22px;
       font-weight: 700;
+    }
+
+
+    .downloadVCard{
+      margin-bottom: 0;
+    }
+    .ItAuditorsLogo{
+      margin-bottom: 0;
     }
   }
 
