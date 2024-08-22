@@ -234,22 +234,63 @@ import "../style.css";
   if (downloadButton) {
     // Your code here
     downloadButton.addEventListener("click", function () {
+      //     const vCardData = `
+      // BEGIN:VCARD
+      // VERSION:4.0
+      // FN:ITAuditorsPR
+      // ORG:ITAuditorsPR
+      // TEL;mobile:+1(787) 6802088
+      // TEL;TYPE=CELL,VOICE:+1(787) 6802089
+      // TEL;TYPE=WORK,VOICE,WHATSAPP:+1(787) 6802090
+      // TEL;office:+1(787) 6802091
+      // EMAIL;TYPE=PREF,INTERNET:admin@itauditorspr.com
+      // ADR;TYPE=WORK:;;CVRF+7RX, PR-2;Aguadilla;00603;Puerto Rico
+      // URL;ItAuditors:https://www.itauditorspr.com/
+      // URL:Facebook:https://www.facebook.com/itauditorspr
+      // URL:LinkedIN:https://www.linkedin.com/company/itauditorspr
+      // END:VCARD
+      //     `;
+
       const vCardData = `
-  BEGIN:VCARD
-  VERSION:4.0
-  FN:ITAuditorsPR
-  ORG:ITAuditorsPR
-  TEL;mobile:+1(787) 6802088
-  TEL;TYPE=CELL,VOICE:+1(787) 6802089
-  TEL;TYPE=WORK,VOICE,WHATSAPP:+1(787) 6802090
-  TEL;office:+1(787) 6802091
-  EMAIL;TYPE=PREF,INTERNET:admin@itauditorspr.com
-  ADR;TYPE=WORK:;;CVRF+7RX, PR-2;Aguadilla;00603;Puerto Rico
-  URL;ItAuditors:https://www.itauditorspr.com/
-  URL:Facebook:https://www.facebook.com/itauditorspr
-  URL:LinkedIN:https://www.linkedin.com/company/itauditorspr
-  END:VCARD
-      `;
+BEGIN:VCARD
+VERSION:3.0
+N;CHARSET=UTF-8:;;; ;
+FN:
+ORG:
+COMPANY:
+TITLE:
+
+ADR;CHARSET=UTF-8;TYPE=WORK:;;;;;;
+TEL;TYPE=Work,pref:
+TEL;CELL;TYPE=Mobile,VOICE:
+TEL;TYPE=WORK,VOICE:
+
+TEL;TYPE=Work,Fax:
+TEL;TYPE=Home,VOICE:
+TEL;TYPE=sms:
+URL;TYPE=Messenger:
+TEL;TYPE=SIGNAL:
+EMAIL;TYPE=Email:
+URL;TYPE=Digital Business Card:
+
+
+
+URL;TYPE=Location:
+KEY:OPENPGP4FPR:
+UID:SMART vCARD-100466190
+URL;TYPE=Website:
+
+URL;TYPE=Calendar:
+URL;TYPE=WhatsApp:
+URL;TYPE=WeChat:
+
+
+
+PHOTO;ENCODING=b:
+NOTE;CHARSET=UTF-8:
+
+END:VCARD
+  `;
 
       const vCardDataEncoded = encodeURIComponent(vCardData);
       const vCardUrl = `data:text/vcard;charset=utf-8,${vCardDataEncoded}`;
