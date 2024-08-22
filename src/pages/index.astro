@@ -195,6 +195,7 @@ import "../style.css";
         Somos una organización que <span>provee soluciones</span> y servicios de
         <span>consultoría, desarrollo e implementaciones.</span>
       </p>
+      <button id="downloadVCard">Save Contact</button>
 
       <div class="security-pic">
         <img
@@ -213,7 +214,6 @@ import "../style.css";
         />
       </div>
     </div>
-    <button id="downloadVCard">Save Contact</button>
 
     <div class="footer">
       <img
@@ -251,15 +251,23 @@ import "../style.css";
   END:VCARD
       `;
 
-      const blob = new Blob([vCardData], { type: "text/vcard" });
-      const url = window.URL.createObjectURL(blob);
+      const vCardDataEncoded = encodeURIComponent(vCardData);
+      const vCardUrl = `data:text/vcard;charset=utf-8,${vCardDataEncoded}`;
+
+      // Create a link element
       const a = document.createElement("a");
       a.style.display = "none";
-      a.href = url;
+      a.href = vCardUrl;
       a.download = "contact.vcf";
+
+      // Append the link to the body
       document.body.appendChild(a);
+
+      // Programmatically click the link to trigger the download
       a.click();
-      window.URL.revokeObjectURL(url);
+
+      // Clean up
+      document.body.removeChild(a);
     });
   }
 </script>
