@@ -258,7 +258,7 @@ END:VCARD
   `;
 
       const vCardDataEncoded = encodeURIComponent(vCardData);
-      const vCardUrl = `data:text/vcard;charset=utf-8,${vCardDataEncoded}`;
+      const vCardUrl = `data:text/x-card;charset=utf-8,${vCardDataEncoded}`;
 
       // Create a link element
       const a = document.createElement("a");
