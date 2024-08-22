@@ -230,20 +230,24 @@ import "../style.css";
 </Layout>
 
 <script>
-  document
-    .getElementById("downloadVCard")
-    .addEventListener("click", function () {
+  const downloadButton = document.getElementById("downloadVCard");
+  if (downloadButton) {
+    // Your code here
+    downloadButton.addEventListener("click", function () {
       const vCardData = `
   BEGIN:VCARD
-  VERSION:3.0
-  FN:John Doe
-  N:Doe;John;;;
-  TEL;TYPE=CELL:+1234567890
-  EMAIL;TYPE=WORK:john.doe@example.com
-  ORG:Example Company
-  TITLE:Software Engineer
-  URL:https://www.example.com
-  NOTE:This is a sample contact.
+  VERSION:4.0
+  FN:ITAuditorsPR
+  ORG:ITAuditorsPR
+  TEL;mobile:+1(787) 6802088
+  TEL;TYPE=CELL,VOICE:+1(787) 6802089
+  TEL;TYPE=WORK,VOICE,WHATSAPP:+1(787) 6802090
+  TEL;office:+1(787) 6802091
+  EMAIL;TYPE=PREF,INTERNET:admin@itauditorspr.com
+  ADR;TYPE=WORK:;;CVRF+7RX, PR-2;Aguadilla;00603;Puerto Rico
+  URL;ItAuditors:https://www.itauditorspr.com/
+  URL:Facebook:https://www.facebook.com/itauditorspr
+  URL:LinkedIN:https://www.linkedin.com/company/itauditorspr
   END:VCARD
       `;
 
@@ -257,4 +261,5 @@ import "../style.css";
       a.click();
       window.URL.revokeObjectURL(url);
     });
+  }
 </script>
